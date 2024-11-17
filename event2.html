@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explore Beautiful Trekking Destinations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+        .trek-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .trek-card:hover {
+            transform: translateY(-10px);
+        }
+        .trek-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .trek-card .info {
+            padding: 15px;
+            text-align: center;
+        }
+        .trek-card h3 {
+            margin: 10px 0;
+            font-size: 22px;
+            color: #2c3e50;
+        }
+        .trek-card p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+        .country-image {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .country-image img {
+            width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .button-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .home-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .home-btn:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Beautiful Trekking Destinations</h1>
+</header>
+
+<div class="content">
+    <div class="trek-card">
+        <img src="trek_everest.jpg" alt="Everest Trek">
+        <div class="info">
+            <h3>Everest Base Camp</h3>
+            <p>Embark on the ultimate trekking adventure to the Everest Base Camp and witness the majestic Himalayas.</p>
+        </div>
+        <!-- Country Image for Everest -->
+        <div class="country-image">
+            <img src="nepal.jpg" alt="Nepal">
+        </div>
+    </div>
+    <div class="trek-card">
+        <img src="trek_inca.jpg" alt="Inca Trail Trek">
+        <div class="info">
+            <h3>Inca Trail</h3>
+            <p>Hike the ancient Inca Trail in Peru, discovering stunning ruins and breathtaking views along the way.</p>
+        </div>
+        <!-- Country Image for Peru -->
+        <div class="country-image">
+            <img src="peru.jpg" alt="Peru">
+        </div>
+    </div>
+    <div class="trek-card">
+        <img src="trek_kilimanjaro.jpg" alt="Kilimanjaro Trek">
+        <div class="info">
+            <h3>Mount Kilimanjaro</h3>
+            <p>Challenge yourself with a trek to the summit of Africa's highest peak, Mount Kilimanjaro in Tanzania.</p>
+        </div>
+        <!-- Country Image for Tanzania -->
+        <div class="country-image">
+            <img src="tanzania.jpg" alt="Tanzania">
+        </div>
+    </div>
+</div>
+
+<div class="button-container">
+    <a href="index.html" class="home-btn">Return to Home</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 Explore Trekking | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('thank-you-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        /* Thank You Message */
+        h1 {
+            font-size: 64px;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 24px;
+            margin: 20px 0;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Return to Home Button */
+        .home-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .home-link:hover {
+            background-color: rgba(255, 255, 255, 1);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank You!</h1>
+    <p>Your message has been received. We’ll get back to you shortly!</p>
+    <a href="index.html" class="home-link">Return to Home Page</a>
+</body>
+</html>
